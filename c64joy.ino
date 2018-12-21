@@ -1,5 +1,5 @@
-// Atari/C64 joystick DE9/DB9 to USB converter that runs on Arduino Leonardo or Olimexino-32U4.
-// Should work with THEC64 MINI 1.2.0+, C64 on Archive.org, VICE, and WinVICE.
+// Atari/C64 joystick DE9/DB9 to USB converter that runs on Arduino Leonardo, Olimexino-32U4 etc.
+// Should work with THEC64 MINI 1.2.0+, Commodore 64 on Archive.org, VICE for Linux, and WinVICE.
 // Never tested! It does compile with Arduino 1.8.8 (Windows Store 1.8.19.0).
 
 // Preferred (left) fire button is different on different emulators:
@@ -7,12 +7,16 @@
 // Archive.org: Insert or Numpad 0.
 // WinVICE/VICE: Right Ctrl, but others can be configured.
 
-// You may implement Right Fire, TL, TR, A, B, C, and Menu for THEC64 MINI using extra buttons.
+// You may implement Right Fire, TL, TR, A, B, C, and Menu for THEC64 MINI using extra buttons
+//   connected to the Arduino.
 // References:
 // https://retrogames.biz/app/uploads/THEC64-User-Guide-June-2018-2018-06-15-EN-US.pdf
 // https://retrogames.biz/support/virtual-joystick/
 // https://retrogames.biz/support/file-loader/
 // https://create.arduino.cc/projecthub/fpfaffendorf/commodore-64-joystick-usb-adapter-c64joy-fc2389
+// The above site has a Fritzing fzz-file with schematic, but check a C64 manual -- only cables needed.
+// http://forum.arduino.cc/index.php?topic=179548.0
+// https://www.arduino.cc/en/Reference/KeyboardModifiers
 
 #include <Keyboard.h>
 
@@ -39,7 +43,6 @@
 233 '\351' Keypad 9 and PageUp
 234 '\352' Keypad 0 and Insert
 235 '\353' Keypad . and Delete
-See http://forum.arduino.cc/index.php?topic=179548.0
 */
 
 #define NUMPAD_UP     '\350'
@@ -51,6 +54,7 @@ See http://forum.arduino.cc/index.php?topic=179548.0
 #define NUMPAD_5      '\345'
 #define NUMPAD_INS    '\352'
 // KEY_RIGHT_CTRL
+// TODO: You could choose which by tilting the joystick in different directions at start.
 
 // Right Fire
 #define NUMPAD_ENTER  '\340'
