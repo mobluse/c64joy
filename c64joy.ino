@@ -1,6 +1,6 @@
 // Atari/C64 joystick DE9/DB9 to USB converter that runs on Arduino Leonardo, Olimexino-32U4 etc.
 // Should work with THEC64 MINI 1.2.0+, Commodore 64 on Archive.org, VICE for Linux, and WinVICE.
-// Never tested! It does compile with Arduino 1.8.8 (Windows Store 1.8.19.0).
+// NO WARRANTY! Never tested! It does compile with Arduino 1.8.8 (Windows Store 1.8.19.0).
 
 // Preferred (left) fire button is different on different emulators:
 // THEC64 MINI: Numpad 5 (with or without Num Lock), but Insert or Numpad 0 works.
@@ -26,25 +26,6 @@
 #define JOY_LEFT      9
 #define JOY_RIGHT     8
 #define JOY_BUTTON    12
-
-/* Numpad keys:
-220 '\334' Keypad /
-221 '\335' Keypad *
-222 '\336' Keypad -
-223 '\337' Keypad +
-224 '\340' Keypad Enter
-225 '\341' Keypad 1 and End
-226 '\342' Keypad 2 and Down Arrow
-227 '\343' Keypad 3 and PageDn
-228 '\344' Keypad 4 and Left Arrow
-229 '\345' Keypad 5
-230 '\346' Keypad 6 and Right Arrow
-231 '\347' Keypad 7 and Home
-232 '\350' Keypad 8 and Up Arrow
-233 '\351' Keypad 9 and PageUp
-234 '\352' Keypad 0 and Insert
-235 '\353' Keypad . and Delete
-*/
 
 #define NUMPAD_UP     '\350'
 #define NUMPAD_DOWN   '\342'
@@ -102,3 +83,22 @@ void loop() {
   else {  Keyboard.release(NUMPAD_RIGHT); }
 
 }
+
+/* Numpad keys:
+220 '\334' Keypad /
+221 '\335' Keypad *
+222 '\336' Keypad -
+223 '\337' Keypad +
+224 '\340' Keypad Enter
+225 '\341' Keypad 1 and End
+226 '\342' Keypad 2 and Down Arrow
+227 '\343' Keypad 3 and PageDn
+228 '\344' Keypad 4 and Left Arrow
+229 '\345' Keypad 5
+230 '\346' Keypad 6 and Right Arrow
+231 '\347' Keypad 7 and Home
+232 '\350' Keypad 8 and Up Arrow
+233 '\351' Keypad 9 and PageUp
+234 '\352' Keypad 0 and Insert
+235 '\353' Keypad . and Delete
+*/
