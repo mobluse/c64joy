@@ -13,6 +13,7 @@
 // https://retrogames.biz/app/uploads/THEC64-User-Guide-June-2018-2018-06-15-EN-US.pdf
 // https://retrogames.biz/support/virtual-joystick/
 // https://retrogames.biz/support/file-loader/
+// https://www.thec64minizone.com/cjm-configuration-file-tool/
 // https://create.arduino.cc/projecthub/fpfaffendorf/commodore-64-joystick-usb-adapter-c64joy-fc2389
 // The above site has a Fritzing fzz-file with schematic, but check a C64 manual -- only cables needed.
 // http://forum.arduino.cc/index.php?topic=179548.0
