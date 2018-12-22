@@ -55,7 +55,7 @@
 #define NUMPAD_5      '\345'
 #define NUMPAD_INS    '\352'
 // KEY_RIGHT_CTRL
-// TODO: You could choose which by tilting the joystick in different directions at start.
+// TODO: You could choose which by tilting the joystick in different directions at connection.
 
 // Right Fire
 #define NUMPAD_ENTER  '\340'
